@@ -1,0 +1,191 @@
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+#wrapper.toggled {
+  padding-left: 180px;
+  position: absolute;
+  margin-right: -250px; }
+
+.sidebar {
+  width: 180px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: hidden;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.sidebartitlebox {
+  height: 130px;
+  width: 100%;
+  background-color: black; }
+
+.sidebartitle {
+  color: white;
+  padding-left: 54px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  background-color: black; }
+  .sidebartitle h3 {
+    font-size: 3em; }
+  .sidebartitle p {
+    color: white; }
+
+.sideimage {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .sideimage img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px; }
+  .sideimage p {
+    color: white;
+    padding-top: 15px; }
+
+.sidebarmenu a {
+  text-decoration: none;
+  color: white; }
+  .sidebarmenu a li {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 10px;
+    height: 40px;
+    font-size: 18px;
+    letter-spacing: 2.2px; }
+  .sidebarmenu a:hover li, .sidebarmenu a:active li {
+    background-color: #3C8CE1;
+    text-decoration: none;
+    color: white; }
+
+.sidebarbody {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #222; }
+
+.sidefooter {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0; }
+
+.sidefootercontent {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: .5%; }
+  .sidefootercontent p {
+    font-size: .7em;
+    padding-bottom: 30px; }
+  .sidefootercontent h3 {
+    color: gray;
+    padding-left: 60px;
+    padding-bottom: 10px; }
+
+.trainerpages {
+  position: absolute;
+  top: 0;
+  left: 180px;
+  bottom: 0;
+  width: calc(100% - 180px);
+  height: 100vh;
+  background-color: white;
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease; }
+
+.trainerheader {
+  height: 63px;
+  border-bottom: 2px solid #CCCCCC;
+  color: white; }
+  .trainerheader img {
+    padding-left: 15px;
+    padding-top: 20px; }
+  .trainerheader ul {
+    display: inline-block;
+    float: right;
+    color: white;
+    padding-right: 50px;
+    padding-top: 25px; }
+    .trainerheader ul li {
+      display: inline-block; }
+    .trainerheader ul li a {
+      text-decoration: none;
+      color: #555;
+      padding-left: 25px; }
+
+.traintitle {
+  width: 100%;
+  height: 63px;
+  border-bottom: 2px solid #CCCCCC;
+  background-color: #ebebeb; }
+  .traintitle p {
+    font-size: 1.4em;
+    padding-left: 15px;
+    padding-top: 19px; }
+
+.page {
+  width: 100%; }
+  .page h4 {
+    color: #5899E4;
+    font-weight: normal;
+    font-size: 23px; }
+
+.pagetitle {
+  padding-left: 20px;
+  padding-bottom: 15px;
+  padding-top: 10px; }
+
+.photo {
+  margin-left: 25px;
+  padding-bottom: 20px; }
+
+.photobox, .photoboxtext {
+  display: inline-block;
+  margin-left: 10px; }
+
+.photobox {
+  width: 27%;
+  height: 200px; }
+
+.photoboxtext {
+  width: 20%; }
+
+.photobox.well {
+  background-color: white;
+  border: 2px solid #CCCCCC;
+  padding-top: 50px; }
+
+.photoboxtext span {
+  color: #3C8CE1; }
+
+.break {
+  width: 100%;
+  height: 40px;
+  background-color: #EBEBEB;
+  border-top: 2px solid #CCCCCC;
+  border-bottom: 2px solid #CCCCCC;
+  padding-top: 10px; }
+
+.leftside {
+  width: 55%;
+  display: inline-block; }
+
+.rightside {
+  width: 45%;
+  display: inline-block;
+  float: right;
+  overflow: scroll; }
+
+.show, .pic {
+  margin-left: 200px; }
+
+/*# sourceMappingURL=events.css.map */

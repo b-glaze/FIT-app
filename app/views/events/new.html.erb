@@ -1,0 +1,87 @@
+<div class="main-wrap">
+	<!-- <input id="slide-sidebar" type="checkbox" role="button" />
+        <label for="slide-sidebar"><span><img src="/assets/Dash icon.png" class="menudash" alt=""></span></label> -->
+	
+	<div class="trainerpages">
+		<div class="trainerheader">
+			<a href="#menu-toggle" id="menu-toggle"><img src="/assets/Dash icon.png" alt=""></a>
+			<ul class="trainheadmenu">
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">LOG OUT</a></li>
+			</ul>
+		</div>
+		<div class="traintitle">
+			<p>Create a Class</p>
+		</div>
+		<div class="page">
+
+			<div class="pagetitle">
+				<h4>Upload Photos</h4>
+			</div>
+			<div class="photo">
+				<div class="well photobox text-center">
+					<img src="/assets/camera.png" alt="camera icon">
+					<p>cover photo</p>
+					<p>(750 x 450)</p>
+				</div>
+				<div class="photoboxtext">
+					<p><span>Hint:</span> Make this photo enticing, it will be the first thing your clients see while searching for classes.</p>
+				</div>
+				<div class="well photobox text-center">
+					<img src="/assets/camera.png" alt="camera icon">
+					<p>confirmation photo</p>
+					<p>(750 x 600)</p>
+				</div>
+				<div class="photoboxtext">
+					<p><span>Hint:</span> This photo will thank your clients for their business.  It should leave them excited for the upcoming class.</p>
+				</div>
+			</div>
+			<div class="break"></div>
+			<%= form_for @event, html: {class: 'classform', multipart: true} do |f| %>
+				<div class="leftside">
+					<div class="pagetitle">
+						<h4>Class Details</h4>
+					</div>
+					<%= f.text_field :title, placeholder: "Title of Class" %>
+					<%= text_field_tag :location, nil, placeholder: "Location" %>
+					<div>
+						<%= f.text_area :description, placeholder: "Describe your class and get your client base excited to sign-up" %>
+						<span class="expaliner">Description</span>
+					</div>
+					<div>
+						<%= f.text_field :price, placeholder: "$0.00" %>
+						<span class="expaliner">Price</span>
+					</div>
+					
+				</div>
+				<div class="rightside">
+					<div class="pagetitle">
+						<h4>Extra Details (Optional)</h4>
+					</div>
+						<p>
+							<%= f.file_field :cover %>
+						</p>
+						<p>
+							<%= f.file_field :confirm %>
+						</p>
+					<div>
+						<%= text_area_tag :tips, nil, placeholder: "Instructions and equipment necessary to attend (seperated by commas)", class: "secondtext" %>
+						<span class="explainer">Tips</span>
+					</div>
+					<div>
+						<%= text_area_tag :tags, nil, placeholder: "Describe your class and get your client base excited to sign-up", class: "secondtext" %>
+						<span class="explainer">Tags</span>
+					</div>
+					<div class="terms">
+        				By clicking publish you agree to our 
+        				<a href="#">
+          					terms of service 
+        				</a>
+      				</div>
+      				<%= f.submit "Submit", class: "butt" %>
+				</div>
+			<% end %>	
+		</div>
+	</div>
+	
+</div>

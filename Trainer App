@@ -1,0 +1,22 @@
+Tranier App
+
+2 users
+	- regular clients
+	- trainers
+		-photos
+		- & regular clients column
+
+payments
+	- payee
+	- payer
+	- class order number
+	- transaction order
+
+classes
+	- name					
+	- description
+	- location
+	- date/time
+	- price
+	- trainer_id
+	- class photo

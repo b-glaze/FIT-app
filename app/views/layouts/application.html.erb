@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fit</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="sidebar">
+			<div class="sidebarbody">
+				<div class="sidebartitle">
+					<h3>FIT</h3>
+					<p>TRAINER</p>
+				</div>
+				<div class="sideimage">
+					<img src="/assets/me.jpg" alt="">
+					<p>Bobby Glaze</p>
+				</div>
+				<ul class="sidebarmenu">
+					<%= link_to new_event_path do %>
+						<li>Create Class</li>
+					<% end %>
+					<%= link_to events_path do %>
+						<li>My Classes</li>
+					<% end %>
+					<a href="#"><li>Profile</li></a>
+					<a href="#"><li>Payment Info</li></a>
+					<a href="#"><li>Stats</li></a>
+				</ul>
+				<div class="sidefooter">
+					<div class="sidefootercontent">
+						<h3>FIT</h3>
+		      			<p>&copy FIT app. All rights reserved</p>
+		      		</div>
+				</div>	
+			</div>
+			
+		</div>
+	</div>	
+<%= yield %>
+	
+	<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+</html>
